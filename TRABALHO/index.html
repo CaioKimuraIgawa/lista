@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Lista de tarefas</title>
+</head>
+
+<body>
+    <div class="header">
+        <h2>Lista de tarefas</h2>
+        <p>Bem-vindo à sua lista de tarefas! Aqui você pode organizar e acompanhar suas atividades diárias de forma simples e eficiente. Adicione novas tarefas, marque as concluídas e mantenha tudo em ordem.</p>
+        <input type="text" id="tarefa" placeholder="Informe a tarefa">
+        <input type="text" id="categoria" placeholder="Categoria">
+        <input type="date" id="data" placeholder="Data">
+        <span onclick="addElemento()" class="addBtn">Adicionar</span>
+        <span onclick="limparLista()" class="clearBtn">Limpar Lista</span>
+        <span onclick="desfazerAcao()" class="undoBtn">Desfazer</span>   
+    </div>
+    <ul id="itemLista"></ul>
+    <script src="script.js"></script>
+</body>
+
+</html>
